@@ -1,3 +1,6 @@
+let humanScore = 0
+let computerScore = 0
+
 function getComputerChoice() {
     const choice =  Math.random()
     if (choice < 0.33) {
