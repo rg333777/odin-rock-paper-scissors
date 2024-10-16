@@ -2,10 +2,10 @@ let humanScore = 0
 let computerScore = 0
 
 function getComputerChoice() {
-    const choice =  Math.random()
-    if (choice < 0.33) {
+    const choice =  Math.floor(Math.random() * 3) + 1
+    if (choice === 1) {
         return 'rock'
-    } else if (choice > 0.66) {
+    } else if (choice === 2) {
         return 'paper'
     } else {
         return 'scissors'
